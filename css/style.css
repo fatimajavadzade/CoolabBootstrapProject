@@ -1,0 +1,495 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Header */
+
+#header {
+  width: 100%;
+  height: 105px;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar-header {
+  color: #fff;
+  font-size: 1.75em;
+  transition: font-size 0.3s;
+  padding: 5px 0;
+  margin-left: 62px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 60px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+/* Home Page */
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-color: #18bc9c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+#home img {
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+#home h1 {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.divider {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-line:first-child {
+  background-color: #fff;
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+
+.divider-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.divider-line:last-child {
+  background-color: #fff;
+  margin-left: 1rem;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+
+#home p {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #fff;
+}
+
+/* Portfolio */
+
+.portfolio-section {
+  padding: 100px 70px;
+  /* Adjust left and right padding to create space from edges */
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  color: #2c3e50;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#portfolio .divider {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio .divider-line:first-child {
+  background-color: #2c3e50;
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+
+#portfolio .divider-icon {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+#portfolio .divider-line:last-child {
+  background-color: #2c3e50;
+  margin-left: 1rem;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 400px;
+  border-radius: 8px;
+}
+
+.portfolio-hover {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  right: 3px;
+  bottom: 4px;
+  background: rgba(24, 188, 156, 0.9);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.portfolio-item:hover .portfolio-hover {
+  opacity: 1;
+}
+
+.portfolio-hover-content {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* About */
+
+#about {
+  padding: 100px 70px;
+  background-color: #18bc9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about h2 {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.divider {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-line:first-child {
+  background-color: #fff;
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+
+.divider-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.about-paragraph {
+ display: flex;
+ justify-content: center;
+ color: #fff;
+}
+
+.about-paragraph div p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.paragraph-1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: 33.3%;
+  margin-right: 20px;
+}
+
+.paragraph-2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: 33.3%;
+  margin-left: 10px;
+}
+
+
+button {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+  background-color: #18bc9c;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5;
+}
+
+button i {
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: #fff;
+  color: black;
+  border-color: #fff;
+}
+
+/* Contact*/
+
+.contact-me {
+  padding: 100px 70px; 
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 300px;
+}
+
+.contact-me h2 {
+  color: #2c3e50;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#contact .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+ 
+}
+#contact .star {
+ 
+  font-size: 40px; 
+  color: rgb(44, 62, 80);
+}
+
+#contact .divider::before,
+#contact .divider::after {
+  content: "";
+ width: 100px;
+  height: 5px; 
+  border-radius: 5px;
+  background-color: rgb(44, 62, 80);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.name ::placeholder{
+font-size: 24px;
+}
+.name input{
+width: 900px;
+height: 70px;
+border: 0px;
+border-bottom: 1px solid rgb(108, 105, 105);
+}
+.name{
+  padding: 30px;
+}
+.emailAddress ::placeholder{
+  font-size: 24px;
+}
+.emailAddress input{
+width: 900px;
+height: 70px;
+border: 0px;
+border-bottom: 1px solid rgb(108, 105, 105);
+}
+.emailAddress{
+  padding: 30px;
+}
+.phoneNumber ::placeholder{
+  font-size: 24px;
+}
+.phoneNumber input{
+width: 900px;
+height: 70px;
+border: 0px;
+border-bottom: 1px solid rgb(108, 105, 105);
+}
+.phoneNumber{
+  padding: 30px;
+}
+.message ::placeholder{
+  font-size: 24px;
+}
+.message input{
+  width: 900px;
+  height: 70px;
+  border: 0px;
+border-bottom: 1px solid rgb(108, 105, 105);
+}
+.message{
+  padding: 30px;
+}
+.send{
+  width: 100px;
+  height: 70px;
+  background-color: #18bc9c;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #18bc9c;
+  border-radius: 5px;
+}
+
+/* Footer */
+
+#footer{
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+
+.location{
+  margin-left: 110px;
+}
+
+.location h4{
+  padding-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.location p{
+  font-size: 18px;
+  width: 200px;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.sosialMedia{
+  margin-left: 100px;
+}
+.sosialMedia h4{
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-size: 1.5rem;
+}
+
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons div{
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutFreelancer h4{
+  padding-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.aboutFreelancer p{
+  font-size: 18px;
+  width: 400px;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.aboutFreelancer a{
+  color: #18bc9c;
+  text-decoration: underline !important;
+ 
+}
+.aboutFreelancer a:hover{
+  color: #048d72;
+}
+.copy-right{
+  background-color: #1a252f;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
